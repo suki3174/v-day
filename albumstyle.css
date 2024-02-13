@@ -1,0 +1,79 @@
+body{
+    background:#fca3b3;
+    overflow-x: hidden; /* This will hide horizontal scrollbars */
+    overflow-y:auto;   
+    
+    
+  }
+  .gallery{
+      position:relative;
+      top:80px;
+      left:200px;
+  }
+  .gallery li{
+      position:absolute;
+      display:block;
+      margin:0px;
+      list-style-type:none;
+      padding:10px 10px 30px 10px;
+      background:#fff;
+      border:solid black 1px;
+      -webkit-box-shadow:2px 2px 4px #333333;
+      -webkit-transition: -webkit-transform 0.5s ease;
+      -moz-box-shadow:2px 2px 4px #333333;
+      -moz-transition: -moz-transform 0.5s ease;
+      box-shadow:2px 2px 4px #333333;
+      transition: transform 0.5s ease;
+  }
+  .gallery li.active{
+      -webkit-transform:rotate(0deg) !important;
+      -moz-transform:rotate(0deg) !important;
+      transform:rotate(0deg) !important;
+
+  }
+  .gallery img{
+      display:block;
+      width:160px;
+      -webkit-transition: width 0.75s;
+      -moz-transition: width 0.75s;
+      transition: width 0.75s;
+  }
+  .gallery .active img{
+      display:block;
+      width:290px;
+      /* padding-bottom: 80px; */
+  }
+
+ 
+  .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+   
+    
+  }
+  
+ .container{
+    margin: 85px;
+ } 
+
+ .scroll{
+    position: absolute;
+    right: 120px;
+    top: 550px;
+
+ }
+ .text{
+    color: white;
+    font-size: 30px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+   text-align: center;
+ }
+ h2{
+    text-align: center;
+ }
